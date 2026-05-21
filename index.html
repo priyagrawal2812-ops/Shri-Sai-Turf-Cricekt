@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your sports slot online at Shri Sai Sports Center, Malkapur. Experience premium FIFA approved green grass, professional floodlights, and a sporty cricket & football atmosphere. Play under lights today!">
+  <title>Shri Sai Sports Center | Premium Cricket & Football Turf Malkapur</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Rajdhani:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Glowing background elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container navbar-container">
+      <a href="#" class="logo-area">
+        <img src="assets/logo.png" alt="Shri Sai Sports Center Logo" class="nav-logo" id="navLogo">
+        <span class="logo-text">SHRI SAI <span class="accent-text">SPORTS</span></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#booking" class="nav-link">Book Turf</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Find Us</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#booking" class="btn btn-primary nav-cta">Book Now</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-light-beam light-left"></div>
+    <div class="hero-light-beam light-right"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-in">
+          <span class="badge-dot"></span> MALKAPUR'S PREMIUM SPORTS DESTINATION
+        </div>
+        <h1 class="hero-title animate-slide-up">
+          PLAY UNDER <span class="neon-text glow-green">LIGHTS</span>
+        </h1>
+        <p class="hero-subtitle animate-slide-up-delay">
+          Experience premium FIFA-approved green grass, high-intensity flood lights, and an electric stadium vibe. Perfect for intense cricket and football face-offs.
+        </p>
+        <div class="hero-actions animate-slide-up-delay-2">
+          <a href="#booking" class="btn btn-primary btn-glow">Book Your Slot</a>
+          <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+        </div>
+        
+        <!-- Live Quick Stats -->
+        <div class="hero-stats animate-fade-in-delayed">
+          <div class="stat-card">
+            <span class="stat-num">24/7</span>
+            <span class="stat-lbl">Open for Play</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">FIFA</span>
+            <span class="stat-lbl">Approved Grass</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100+</span>
+            <span class="stat-lbl">LED Floodlights</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Graphic Hero element representing cricket wickets on turf -->
+      <div class="hero-visual">
+        <div class="visual-wrapper">
+          <div class="glowing-stumps">
+            <div class="stump stump-1"></div>
+            <div class="stump stump-2"></div>
+            <div class="stump stump-3"></div>
+            <div class="bail bail-1"></div>
+            <div class="bail bail-2"></div>
+          </div>
+          <div class="ball-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Booking & Calendar Section -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">RESERVE COURT</span>
+        <h2 class="section-title">ONLINE <span class="yellow-text">SLOT BOOKING</span></h2>
+        <p class="section-desc">Select your date, pick a free slot, and book instantly. Under-lights slots are highly popular, so reserve early!</p>
+      </div>
+
+      <div class="booking-grid">
+        <!-- Date & Calendar Glassmorphism Card -->
+        <div class="glass-card calendar-card">
+          <h3 class="card-title"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 4h-1V3c0-.55-.45-1-1-1s-1 .45-1 1v1H8V3c0-.55-.45-1-1-1s-1 .45-1 1v1H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg> 1. Select Date</h3>
+          <div class="date-picker-container" id="datePicker">
+            <!-- Dynamic Date Chips will be injected here by JS -->
+          </div>
+          
+          <div class="turf-selection-container">
+            <h4 class="sub-card-title">Choose Sport:</h4>
+            <div class="sport-toggle-group">
+              <button class="sport-btn active" data-sport="Cricket">
+                <span class="sport-icon">🏏</span> Cricket Turf
+              </button>
+              <button class="sport-btn" data-sport="Football">
+                <span class="sport-icon">⚽</span> Football Court
+              </button>
+            </div>
+          </div>
+
+          <div class="booking-legend">
+            <div class="legend-item"><span class="legend-dot status-available"></span> Available</div>
+            <div class="legend-item"><span class="legend-dot status-booked"></span> Booked</div>
+            <div class="legend-item"><span class="legend-dot status-selected"></span> Selected</div>
+          </div>
+        </div>
+
+        <!-- Time Slots Glassmorphism Card -->
+        <div class="glass-card slots-card">
+          <div class="slots-header">
+            <h3 class="card-title"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 2. Choose Time Slot</h3>
+            <span class="selected-date-display" id="selectedDateLabel">Select a Date</span>
+          </div>
+
+          <div class="slots-grid" id="slotsGrid">
+            <!-- Dynamic Slots will be injected here by JS -->
+          </div>
+
+          <div class="booking-summary-box hidden" id="summaryBox">
+            <div class="summary-details">
+              <div>
+                <span class="summary-label">Selected Slot:</span>
+                <span class="summary-val" id="summarySlot">Friday, May 22 | 07:00 PM - 09:00 PM</span>
+              </div>
+              <div>
+                <span class="summary-label">Price:</span>
+                <span class="summary-val accent-val" id="summaryPrice">₹1500</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">BEST RATES</span>
+        <h2 class="section-title">TRANSPARENT <span class="neon-text">PRICING</span></h2>
+        <p class="section-desc">We offer budget-friendly prices for our premium turf with dedicated rates for daylight and night floodlight matches.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Day Pricing Card -->
+        <div class="glass-card pricing-card hover-glow-yellow">
+          <div class="pricing-badge">DAY TIME</div>
+          <div class="pricing-icon">☀️</div>
+          <h3 class="pricing-hours">12:00 PM – 07:00 PM</h3>
+          <div class="price-amount">
+            <span class="currency">₹</span><span class="amount">1300</span><span class="duration"> / 2 Hours</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check-icon">✓</span> Professional FIFA Green Turf</li>
+            <li><span class="check-icon">✓</span> Free Drinking Water</li>
+            <li><span class="check-icon">✓</span> High-Quality Cricket Stumps & Bails</li>
+            <li><span class="check-icon">✓</span> Clean Changing Rooms</li>
+            <li><span class="check-icon">✓</span> Standard Bibs/Markers Provided</li>
+          </ul>
+          <a href="#booking" class="btn btn-secondary btn-full">Book Day Slot</a>
+        </div>
+
+        <!-- Night Pricing Card (Featured/Lights) -->
+        <div class="glass-card pricing-card pricing-card-featured hover-glow-green">
+          <div class="pricing-badge badge-featured">UNDER LIGHTS</div>
+          <div class="pricing-icon">⚡</div>
+          <h3 class="pricing-hours">07:00 PM – 12:00 AM</h3>
+          <div class="price-amount">
+            <span class="currency">₹</span><span class="amount">1500</span><span class="duration"> / 2 Hours</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check-icon">✓</span> <strong>100+ LED Stadium Floodlights</strong></li>
+            <li><span class="check-icon">✓</span> Professional FIFA Green Turf</li>
+            <li><span class="check-icon">✓</span> Cricket & Football Gear Support</li>
+            <li><span class="check-icon">✓</span> HD Match Videography Support (Paid)</li>
+            <li><span class="check-icon">✓</span> Free Drinking Water & Kit Bags</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary btn-full btn-glow">Book Night Slot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Turf Features / Energy Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ELITE EXPERIENCE</span>
+        <h2 class="section-title">WHY PLAY <span class="yellow-text">AT SHRI SAI?</span></h2>
+        <p class="section-desc">We deliver the ultimate sports arena vibe built for high-performance training, tournaments, and weekend clashes.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-img-box">
+            <div class="feature-icon">🏟️</div>
+          </div>
+          <h3 class="feature-title">FIFA Approved Turf</h3>
+          <p class="feature-desc">Engineered with multi-layered shock absorption and high-density premium grass fibers to protect your knees and ankles.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-img-box">
+            <div class="feature-icon">💡</div>
+          </div>
+          <h3 class="feature-title">Shadowless Lighting</h3>
+          <p class="feature-desc">Equipped with vertically aligned matrix floodlights. Play night matches without blinding glares or pitch shadows.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-img-box">
+            <div class="feature-icon">🏏</div>
+          </div>
+          <h3 class="feature-title">Multisport Action</h3>
+          <p class="feature-desc">Perfect dimensions and high-quality boundary nets for high scoring box cricket matches and 6v6/7v7 football games.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-img-box">
+            <div class="feature-icon">🥤</div>
+          </div>
+          <h3 class="feature-title">Top-Tier Amenities</h3>
+          <p class="feature-desc">Includes safe locker storage, drinking water coolers, parking for 30+ vehicles, and custom seating for spectators.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PHOTO GALLERY</span>
+        <h2 class="section-title">THE <span class="neon-text">ARENA VIBE</span></h2>
+        <p class="section-desc">Glimpse the intense gameplays, celebrations, and premium turf visual quality from real matches under lights.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item glass-card card-compact" onclick="openLightbox(this)">
+          <div class="gallery-img-wrapper">
+            <img src="assets/player1.jpg" alt="Player hitting cricket ball under floodlights" class="gallery-img">
+          </div>
+          <div class="gallery-meta">
+            <h4>Night Box Cricket</h4>
+            <span>Weekend Clash</span>
+          </div>
+        </div>
+
+        <div class="gallery-item glass-card card-compact" onclick="openLightbox(this)">
+          <div class="gallery-img-wrapper">
+            <img src="assets/player2.jpg" alt="Football on premium turf pitch" class="gallery-img">
+          </div>
+          <div class="gallery-meta">
+            <h4>Football Training</h4>
+            <span>FIFA Green Turf</span>
+          </div>
+        </div>
+
+        <div class="gallery-item glass-card card-compact" onclick="openLightbox(this)">
+          <div class="gallery-img-wrapper">
+            <img src="assets/player3.jpg" alt="Team celebrating sports victory" class="gallery-img">
+          </div>
+          <div class="gallery-meta">
+            <h4>Victory Moments</h4>
+            <span>Happy Players</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PLAYERS SAY</span>
+        <h2 class="section-title">TESTIMONIALS</h2>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonial-card glass-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">Shri Sai Sports Center has completely elevated box cricket in Malkapur. The floodlights are incredibly bright, and there's no glare while batting. Playing here after 8 PM feels like playing in an IPL stadium!</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4 class="author-name">Rahul Deshmukh</h4>
+              <span class="author-club">Captain, Malkapur Cricket Club</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">Awesome grass quality! Usually, turf grass hurts your knees after 2 hours of football, but this FIFA-grade turf is super cushiony and soft. Plus, the booking process via WhatsApp is incredibly quick and reliable.</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4 class="author-name">Amit Sharma</h4>
+              <span class="author-club">Football Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">We book the slot every Saturday night. The pricing is super fair compared to the facility standards. Changing rooms are clean and the staff is very helpful in arranging sports kits. Best sports arena in town.</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4 class="author-name">Vinay Patil</h4>
+              <span class="author-club">Sai Super Kings Club</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Google Maps Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Location details -->
+        <div class="contact-info-panel glass-card">
+          <h2 class="panel-title">GET IN <span class="neon-text">TOUCH</span></h2>
+          <p class="panel-desc">Got questions about tournaments, coaching camps, or corporate bookings? Reach out to us or drop by the venue.</p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div class="info-text">
+                <h4>Location</h4>
+                <p>Shri Sai Sports Center, Near Bypass Highway, Malkapur, Maharashtra 443101</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div class="info-text">
+                <h4>Phone / Booking</h4>
+                <p>+91 99999 88888 / +91 98888 77777</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <span class="info-icon">⏰</span>
+              <div class="info-text">
+                <h4>Arena Timings</h4>
+                <p>Open 24 Hours (Prior reservation required)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-action-box">
+            <a href="https://wa.me/919999988888?text=Hello%20Shri%20Sai%20Sports%20Center,%20I'd%20like%20to%20inquire%20about%20booking%20the%20turf." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <svg class="wa-logo-svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Container -->
+        <div class="map-panel glass-card">
+          <div class="map-header">
+            <h3>FIND THE ARENA</h3>
+            <span class="pulse-indicator"><span class="pulse-dot"></span> LIVE VENUE</span>
+          </div>
+          <div class="map-wrapper">
+            <!-- Custom Styled Google Maps Embed pointing generally to Malkapur Bypass Highway -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14945.719875151597!2d76.19572620716616!3d20.884946394593845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc1973cf36f23b%3A0xe5a363989c922572!2sMalkapur%2C%20Maharashtra%20443101!5e0!3m2!1sen!2sin!4v1716300000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo-area">
+          <img src="assets/logo.png" alt="Shri Sai Sports Logo" class="footer-logo">
+          <span class="logo-text">SHRI SAI <span class="accent-text">SPORTS</span></span>
+        </a>
+        <p class="brand-bio">
+          Offering premium quality box cricket and mini-football facility with FIFA-grade grass turf and dynamic lighting systems in Malkapur.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#booking">Book Slots</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="#gallery">Arena Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <p>Follow us for tournament updates and deals</p>
+        <div class="social-icons">
+          <a href="#" class="social-btn">FB</a>
+          <a href="#" class="social-btn">IG</a>
+          <a href="#" class="social-btn">YT</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Shri Sai Sports Center – Malkapur. All rights reserved.</p>
+        <p><a href="javascript:void(0)" id="adminTrigger" class="admin-link">🛡️ Staff Admin Portal</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Details Modal Overlay -->
+  <div class="modal-overlay hidden" id="bookingModal">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <h3>Confirm Booking Details</h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <form class="modal-body" id="bookingForm">
+        <div class="modal-slot-summary">
+          <div class="modal-summary-item">
+            <span class="lbl">Sport:</span>
+            <span class="val accent-val" id="modalSport">Cricket</span>
+          </div>
+          <div class="modal-summary-item">
+            <span class="lbl">Date:</span>
+            <span class="val" id="modalDate">2026-05-22</span>
+          </div>
+          <div class="modal-summary-item">
+            <span class="lbl">Slot Time:</span>
+            <span class="val" id="modalTime">07:00 PM - 09:00 PM</span>
+          </div>
+          <div class="modal-summary-item">
+            <span class="lbl">Total Price:</span>
+            <span class="val yellow-val" id="modalPrice">₹1500</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="userName">Full Name <span class="required">*</span></label>
+          <input type="text" id="userName" required placeholder="Enter player name">
+        </div>
+
+        <div class="form-group">
+          <label for="userPhone">Mobile Number (WhatsApp) <span class="required">*</span></label>
+          <input type="tel" id="userPhone" pattern="[6-9][0-9]{9}" required placeholder="10-digit number (e.g. 9876543210)">
+          <small class="form-hint">Bookings are confirmed and coordinated via WhatsApp.</small>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="modalCancel">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-glow">Confirm & Book via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard Modal Overlay -->
+  <div class="modal-overlay hidden" id="adminModal">
+    <div class="modal-card glass-card admin-dashboard-card">
+      <div class="modal-header">
+        <div class="admin-header-title">
+          <h3>Staff Administration Dashboard</h3>
+          <span class="badge-tag">Malkapur Hub</span>
+        </div>
+        <button class="modal-close" id="adminClose">&times;</button>
+      </div>
+      
+      <!-- Passcode Panel -->
+      <div class="admin-passcode-view" id="adminAuthPanel">
+        <p>Please enter the staff administration security passcode:</p>
+        <div class="passcode-form">
+          <input type="password" id="adminPasscode" placeholder="••••" maxlength="6" autofocus>
+          <button class="btn btn-primary" id="adminSubmitBtn">Enter Dashboard</button>
+        </div>
+        <p class="error-text hidden" id="adminPasscodeError">Invalid passcode! Please try again.</p>
+        <small class="hint-text">(Hint: Default passcode is 1234)</small>
+      </div>
+
+      <!-- Dashboard Panel -->
+      <div class="admin-main-view hidden" id="adminMainPanel">
+        <div class="admin-tabs">
+          <button class="tab-btn active" id="tabBookings">Live Bookings</button>
+          <button class="tab-btn" id="tabBlockSlots">Block Slots</button>
+          <button class="tab-btn" id="tabStats">Analytics & Stats</button>
+        </div>
+
+        <div class="admin-tab-content">
+          <!-- Bookings Tab -->
+          <div class="tab-pane" id="paneBookings">
+            <div class="booking-table-controls">
+              <h4>All Active Bookings</h4>
+              <button class="btn btn-secondary btn-sm" id="btnClearStorage">Reset All Data</button>
+            </div>
+            <div class="table-wrapper">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Time Slot</th>
+                    <th>Sport</th>
+                    <th>Player</th>
+                    <th>Contact</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="adminBookingsList">
+                  <!-- JS Injected Rows -->
+                </tbody>
+              </table>
+              <div class="no-data-display hidden" id="noBookingsMsg">No active bookings found.</div>
+            </div>
+          </div>
+
+          <!-- Block Slots Tab -->
+          <div class="tab-pane hidden" id="paneBlockSlots">
+            <div class="block-form-container">
+              <div class="form-row">
+                <div class="form-group flex-1">
+                  <label for="blockDate">Select Date</label>
+                  <select id="blockDate" class="admin-select"></select>
+                </div>
+                <div class="form-group flex-1">
+                  <label for="blockSlot">Select Slot Time</label>
+                  <select id="blockSlot" class="admin-select"></select>
+                </div>
+                <div class="form-group flex-1">
+                  <label for="blockSport">Sport Court</label>
+                  <select id="blockSport" class="admin-select">
+                    <option value="Both">Both (Cricket & Football)</option>
+                    <option value="Cricket">Cricket Turf Only</option>
+                    <option value="Football">Football Court Only</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-primary" id="btnBlockSlot">Block Selected Slot</button>
+            </div>
+
+            <h4 class="sub-pane-title">Currently Blocked Slots (Maintenance / Events)</h4>
+            <div class="table-wrapper">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Time Slot</th>
+                    <th>Scope</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="adminBlockedList">
+                  <!-- JS Injected Rows -->
+                </tbody>
+              </table>
+              <div class="no-data-display" id="noBlockedMsg">No active maintenance blocks.</div>
+            </div>
+          </div>
+
+          <!-- Analytics Tab -->
+          <div class="tab-pane hidden" id="paneStats">
+            <div class="analytics-grid">
+              <div class="stat-box">
+                <span class="stat-num yellow-text" id="statRevenue">₹0</span>
+                <span class="stat-lbl">Estimated Revenue</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num neon-text" id="statTotalBookings">0</span>
+                <span class="stat-lbl">Total Bookings</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num" id="statCricketCount">0</span>
+                <span class="stat-lbl">Cricket Bookings</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num" id="statFootballCount">0</span>
+                <span class="stat-lbl">Football Bookings</span>
+              </div>
+            </div>
+
+            <div class="analytics-details">
+              <h4>Popular Slots Chart</h4>
+              <div class="popular-list" id="popularSlotsContainer">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox for Image Zoom -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg">
+    <div id="lightboxCaption"></div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
