@@ -1,0 +1,18 @@
+{
+  "name": "shri-sai-sports-turf",
+  "version": "1.0.0",
+  "description": "Premium Turf Booking Website for Shri Sai Sports Center - Malkapur",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "turf",
+    "booking",
+    "sports",
+    "cricket",
+    "football"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}
